@@ -2,10 +2,8 @@ SUBDIRS = src
 BUILDDIR = build
 DATA_FILE=cal-home-widget.desktop
 LIB=cal-home-widget.so
-#HILDON_WIDGET_LIB_DIR=$(shell pkg-config libhildondesktop-1 --variable=hildondesktoplibdir)
-HILDON_WIDGET_LIB_DIR=/usr/lib/hildon-desktop
-#HILDON_WIDGET_DATA_DIR=$(shell pkg-config libhildondesktop-1 --variable=hildonhomedesktopentrydir)
-HILDON_WIDGET_DATA_DIR=/usr/share/applications/hildon-home
+HILDON_WIDGET_LIB_DIR=$(shell pkg-config libhildondesktop-1 --variable=hildondesktoplibdir)
+HILDON_WIDGET_DATA_DIR=$(shell pkg-config libhildondesktop-1 --variable=hildonhomedesktopentrydir)
 
 
 all:    create_builddir subdirs
@@ -33,4 +31,4 @@ create_builddir:
 
 clean:
 	rm -rf build
-	for d in $(SUBDIRS); do (cd $$d; $(MAKE) clean);done
+	for d in $(SUBDIRS); do (cd $$d; $(MAKE) clean); done

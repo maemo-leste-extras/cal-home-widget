@@ -1,8 +1,8 @@
 OBJS=cal-home-widget.o cal-home-load-and-store.o cal-home-calendar-util.o cal-home-settings-dlg.o
 BUILDDIR=../build
 LIB=$(BUILDDIR)/cal-home-widget.so
-PKG_FLAGS_C=$(shell pkg-config hildon-1 libhildondesktop-1 calendar-backend --cflags)
-PKG_FLAGS_LIB=$(shell pkg-config hildon-1 libhildondesktop-1 calendar-backend --libs)
+PKG_FLAGS_C=$(shell pkg-config hildon-1 libhildondesktop-1 calendar-backend gconf-2.0 --cflags) -fPIC
+PKG_FLAGS_LIB=$(shell pkg-config hildon-1 libhildondesktop-1 calendar-backend gconf-2.0 --libs)
 CCFLAGS=-shared
 CC=g++
 
@@ -18,4 +18,4 @@ $(LIB):$(OBJS)
 .PHONY: clean all
 
 clean:
-	rm $(OBJS)
+	rm -f $(OBJS)
