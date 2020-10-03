@@ -1,0 +1,198 @@
+cal-home-widget (1.5) unstable; urgency=low
+
+  * adjust the timezone for non all-day events
+
+ -- Nicolai Hess <nicolaihess@web.de>  Mon, 26 Sep 2011 23:14:22 +0200
+
+cal-home-widget (1.4) unstable; urgency=low
+
+  * use the event timezone setting only for allday events and todos
+    (maybe birthdays, too?)
+
+ -- Nicolai Hess <nicolaihess@web.de>  Sun,  1 May 2011 13:31:12 +0200
+
+cal-home-widget (1.3) unstable; urgency=low
+
+  * fixed start date/time should now take into account the
+    right timezone setting for all events (normal/birthdays ...)
+
+ -- Nicolai Hess <nicolaihess@web.de>  Wed, 13 Apr 2011 11:00:00 +0200
+
+cal-home-widget (1.2) unstable; urgency=low
+
+  * fixed bug with timezone offset for recurrent events
+  * read localized calendar name
+
+ -- Nicolai Hess <nicolaihess@web.de>  Sun, 10 Apr 2011 17:25:55 +0200
+
+cal-home-widget (1.1) unstable; urgency=low
+
+  * changed the layout a bit, so it better match the
+    calendarbackground image.
+
+ -- Nicolai Hess <nicolaihess@web.de>  Sun,  9 Jan 2011 21:40:41 +0100
+
+cal-home-widget (1.0) unstable; urgency=low
+
+  * automatic view update is working again
+  * doesn't ignore task timezone
+  * only shows tasks within the selected
+    time interval
+
+ -- Nicolai Hess <nicolaihess@web.de>  Wed, 22 Dec 2010 01:05:37 +0100
+
+cal-home-widget (0.9.11) unstable; urgency=low
+
+  * last version only contains changed changelog but
+    no other changes :-)
+
+  * fixed bug with birthdays in other timezone
+  * fixed bug with ignored setting for event, event/task, task
+    view mode
+  * show weekday name for tasks
+
+ -- Nicolai Hess <nicolaihess@web.de>  Wed, 15 Dec 2010 11:08:23 +0100
+
+cal-home-widget (0.9.10) unstable; urgency=low
+
+  * fixed bug with birthdays in other timezone
+  * fixed bug with ignored setting for event, event/task, task
+    view mode
+  * show weekday name for tasks
+
+ -- Nicolai Hess <nicolaihess@web.de>  Wed, 15 Dec 2010 01:08:23 +0100
+
+cal-home-widget (0.9.9) unstable; urgency=low
+
+  * cut long summary text.
+
+ -- Nicolai Hess <nicolaihess@web.de>  Sun, 12 Dec 2010 16:23:37 +0100
+
+cal-home-widget (0.9.8) unstable; urgency=low
+
+  * fixed timezone bug (hopefully)
+  * removed monospace font for weekday display,
+    use table layout now.
+
+ -- Nicolai Hess <nicolaihess@web.de>  Sun, 12 Dec 2010 14:29:03 +0100
+
+cal-home-widget (0.9.7) unstable; urgency=low
+
+  * fixed displaying todays allday events.
+
+ -- Nicolai Hess <nicolaihess@web.de>  Wed,  8 Dec 2010 01:33:02 +0100
+
+cal-home-widget (0.9.6) unstable; urgency=low
+
+  * fixed bug with wrong assumption how limit and offset for
+    function getComponents are meant
+  * add option to show/hide old undone task
+  * add option to show/hide done task
+  * better calendar entry search by event type
+
+ -- Nicolai Hess <nicolaihess@web.de>  Thu,  2 Dec 2010 00:38:17 +0100
+
+cal-home-widget (0.9.5) unstable; urgency=low
+
+  * add option to show week day in event list
+
+ -- Nicolai Hess <nicolaihess@web.de>  Sat,  9 Oct 2010 01:08:50 +0200
+
+cal-home-widget (0.9.4) unstable; urgency=low
+
+  * fixed bug with "&" sign in summary text
+
+ -- Nicolai Hess <nicolaihess@web.de>  Sat,  9 Oct 2010 00:56:37 +0200
+
+cal-home-widget (0.9.3) unstable; urgency=low
+
+  * now fixed a new bug with timezone offset and recurrent events.
+
+ -- Nicolai Hess <nicolaihess@web.de>  Tue, 28 Sep 2010 00:39:40 +0200
+
+cal-home-widget (0.9.2) unstable; urgency=low
+
+  * today task are visible, too.
+  * better timezone handling (yesterday allday events were shown
+    for today, too)
+
+ -- Nicolai Hess <nicolaihess@web.de>  Sun, 26 Sep 2010 10:39:50 +0200
+
+cal-home-widget (0.9.1) unstable; urgency=low
+
+  * new feature: show only one instance for recurrent events
+  * new feature: show only events, show only tasks
+    show tasks and events
+
+ -- Nicolai Hess <nicolaihess@web.de>  Fri, 24 Sep 2010 02:05:26 +0200
+
+cal-home-widget (0.9) unstable; urgency=low
+
+  * fixed wrong age calculation (real year of born isn't
+    saved in "datestart" but the "status" entry of the
+    calendar birthday event)
+
+ -- Nicolai Hess <nicolaihess@web.de>  Fri, 25 Jun 2010 14:30:16 +0200
+
+cal-home-widget (0.8) unstable; urgency=low
+
+  * new option to trigger update when switched to current desktop
+
+ -- Nicolai Hess <nicolaihess@web.de>  Fri, 25 Jun 2010 01:30:16 +0200
+
+cal-home-widget (0.7) unstable; urgency=low
+
+  * fixed memory leak with recurrent events
+  * fixed bug with today birthday events
+  * show persons age for birthday events
+
+
+ -- Nicolai Hess <nicolaihess@web.de>  Wed, 23 Jun 2010 02:03:46 +0200
+
+cal-home-widget (0.6) unstable; urgency=low
+
+  * add visual separator for today events
+  * changed automatic update, updates view on midnight
+    or if a today event is over
+  * update on timeformat change works now
+  * trigger manual update by long (~1s) tapping on the title 
+    (weekday name).
+
+ -- Nicolai Hess <nicolaihess@web.de>  Tue, 15 Jun 2010 01:51:07 +0200
+
+cal-home-widget (0.5) unstable; urgency=low
+
+  * fixed issue with multiday events
+  * changed custom calendar size from predefined values (small, medium, large)
+    to numbered values (1, ..., 9).
+  * uses the calendar background image from the current theme
+
+ -- Nicolai Hess <nicolaihess@web.de>  Wed,  9 Jun 2010 01:35:15 +0200
+
+cal-home-widget (0.4) unstable; urgency=low
+
+  * fixed bug: only one today allday events was shown. 
+
+ -- Nicolai Hess <nicolaihess@web.de>  Sun,  6 Jun 2010 11:33:36 +0200
+
+cal-home-widget (0.3) unstable; urgency=low
+
+  * Bugfixes: 
+  * No missing birthdays
+  * Fixe crash when removing widget
+  * Handles Night/Day change
+  * No crash afterZ removing calendars
+
+ -- Nicolai Hess <nicolaihess@web.de>  Sat,  5 Jun 2010 11:21:13 +0200
+
+cal-home-widget (0.2) unstable; urgency=low
+
+  * changed debian package descriptionZ
+
+ -- Nicolai Hess <nicolaihess@web.de>  Thu,  3 Jun 2010 09:33:25 +0200
+
+cal-home-widget (0.1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Nicolai <nicolaihess@web.de>  Fri, 28 May 2010 23:47:47 +0200

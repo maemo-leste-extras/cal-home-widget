@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Calendar Home Widget
+Comment=Advanced Calendar Home Widget
+Type=default
+X-Multiple=true
+X-Path=cal-home-widget.so
