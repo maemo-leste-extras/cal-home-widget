@@ -11,7 +11,7 @@ Vcs-Browser: https://github.com/maemo-leste-extras/cal-home-widget
 
 Package: cal-home-widget
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, calendar-l10n-mr0
 Description: Calendar Home Widget
  Opens the calendar application with different
  views (agenda, week, month). Can change dynamically
