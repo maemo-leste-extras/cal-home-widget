@@ -27,7 +27,7 @@
 
 struct CComponentCompare
 {
-  bool operator()(CComponent* c1, CComponent* c2)
+  bool operator()(CComponent* c1, CComponent* c2) const
   {
     return c1->getDateStart() < c2->getDateStart();
   }
